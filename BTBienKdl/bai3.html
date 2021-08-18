@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dien tich hinh tron</title>
+</head>
+<body>
+    <p>dien tich hinh tron la:</p>
+    <p id ="resultDT"></p>
+    <p>Chu vi hinh tron la:</p>
+    <p id ="resultCV"></p>
+    <script>
+        let r;
+        r = +prompt("ban kinh hinh tron la : ");
+        var dt = (r*r*3.14);
+        document.getElementById("resultDT").innerHTML = dt;
+
+
+        var cv = (2*r*3.14);
+        document.getElementById("resultCV").innerHTML = cv;
+    </script>
+</body>
+</html>
