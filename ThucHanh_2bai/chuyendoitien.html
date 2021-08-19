@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung chuyen doi tien te</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <td width="100px"></td>
+                <th>From currecy</th>
+                <td width="100px"></td>
+                <th>to currency</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="nhap"></td>
+                <td></td>
+                <td>
+                    <select>
+                        <option>VietNam</option>
+                    </select>
+                </td>
+                <td></td>
+                <td>
+                    <select>
+                        <option>USD</option>
+                    </select>
+                </td>
+                <td></td>
+                <td>
+                    <button id="xacnhan" onclick="changeMoney()">convert</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    <p id="result"> result :</p>
+    <script>
+        function changeMoney() {
+            let input  = parseInt(document.getElementById("nhap").value);
+            let result = input / 23000;
+            document.getElementById("result").innerHTML = "result:" +result;
+        }
+    </script>
+</body>
+</html>
